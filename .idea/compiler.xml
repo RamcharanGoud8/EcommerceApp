@@ -2,7 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile name="Annotation profile for notificationservice" enabled="true">
+      <profile name="Annotation profile for userservice" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="userservice" />
+      </profile>
+      <profile name="Annotation profile for adminservice" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -13,12 +23,11 @@
         <module name="shippingservice" />
         <module name="productservice" />
         <module name="adminservice" />
-        <module name="userservice" />
         <module name="inventoryservice" />
         <module name="paymentservice" />
         <module name="notificationservice" />
-        <module name="gatewayservice" />
         <module name="orderservice" />
+        <module name="gatewayservice" />
       </profile>
     </annotationProcessing>
   </component>
